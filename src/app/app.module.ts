@@ -1,11 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Bootstrap modules
+
 import { AppComponent } from './app.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule
