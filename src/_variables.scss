@@ -1,1 +1,10 @@
-$icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+// $icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Global Colours
+$black: #000;
+$primary-text: rgba(255, 255, 255, 1);
+$secondary-text: rgba(255, 255, 255, .7);
+
+// Bootstrap Variables
+$body-bg:    $black;
+$body-color: $primary-text;
