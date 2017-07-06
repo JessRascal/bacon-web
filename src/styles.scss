@@ -1,4 +1,39 @@
+/*** imports start ***/
 @import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 $fa-font-path: "../node_modules/font-awesome/fonts";
 @import "../node_modules/font-awesome/scss/font-awesome.scss";
+/*** imports end ***/
+
+/*** fonts start ***/
+// html, html a {
+//     -webkit-font-smoothing: antialiased;
+//     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+// }
+@font-face {
+    font-family: 'walkway';
+    src: url('/assets/fonts/walkway/Walkway_SemiBold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'walkway';
+    src: url('/assets/fonts/walkway/Walkway_Bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+  font-family: 'walkway', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: .1rem;
+}
+h1, .h1 {
+    font-weight: 600;
+}
+/*** fonts end ***/
+
+/*** bootstrap start ***/
+html, body {
+    height: 100%;
+}
+/*** bootstrap end ***/

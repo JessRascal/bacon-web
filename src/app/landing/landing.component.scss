@@ -1,3 +1,11 @@
-.container-fluid {
-    height: 100vh;
+@import '../../variables';
+
+.title-div {
+  padding-bottom: 20rem;
+}
+h1 {
+  font-size: 4rem;
+}
+h5 {
+  color: $secondary-text;
 }
