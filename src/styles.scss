@@ -5,11 +5,13 @@ $fa-font-path: "../node_modules/font-awesome/fonts";
 @import "../node_modules/font-awesome/scss/font-awesome.scss";
 /*** imports end ***/
 
+/*** bootstrap start ***/
+html, body {
+    height: 100%;
+}
+/*** bootstrap end ***/
+
 /*** fonts start ***/
-// html, html a {
-//     -webkit-font-smoothing: antialiased;
-//     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-// }
 @font-face {
     font-family: 'walkway';
     src: url('/assets/fonts/walkway/Walkway_SemiBold-webfont.woff') format('woff');
@@ -33,6 +35,9 @@ h1, .h1 {
 /*** fonts end ***/
 
 /*** general start ***/
+html {
+  overflow: visible;
+}
 body { 
   background: url(assets/images/dark-blue-bg-min.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -44,9 +49,3 @@ p {
     line-height: 1.7rem;
 }
 /*** general end ***/
-
-/*** bootstrap start ***/
-html, body {
-    height: 100%;
-}
-/*** bootstrap end ***/

@@ -8,10 +8,44 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    html {
+      overflow: hidden;
+    }
+    .outer {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .loader {
+      border: 8px solid #eee;
+      border-top: 8px solid #9e9e9e;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <app-root></app-root>
+  <app-root>
+    <div class="outer">
+      <div class="loader"></div>
+    </div>
+  </app-root>
 </body>
 
 </html>
