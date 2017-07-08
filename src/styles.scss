@@ -32,6 +32,19 @@ h1, .h1 {
 }
 /*** fonts end ***/
 
+/*** general start ***/
+body { 
+  background: url(assets/images/dark-blue-bg-min.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+p {
+    line-height: 1.7rem;
+}
+/*** general end ***/
+
 /*** bootstrap start ***/
 html, body {
     height: 100%;

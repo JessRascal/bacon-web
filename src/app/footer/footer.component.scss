@@ -2,5 +2,9 @@
 
 .container-fluid {
   height: 5rem;
-  background-color: $darker-blue;
+  color: $text-secondary;
+  background-color: rgba(1,48,76,.4);
+}
+p {
+  margin-bottom: 0;
 }

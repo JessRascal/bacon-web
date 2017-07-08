@@ -1,11 +1,11 @@
 // $icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 // Global Colors
-$primary-text: rgba(255, 255, 255, 1);
-$secondary-text: rgba(255, 255, 255, .7);
-$dark-blue: #09152f;
-$darker-blue: #040a16;
+$text-primary: rgba(255, 255, 255, 1);
+$text-secondary: rgba(255, 255, 255, .7);
+$blue-dark: #09152f;
+$blue-darker: #040a16;
 
 // Bootstrap Variables
-$body-bg: $dark-blue;
-$body-color: $primary-text;
+// $body-bg: $dark-blue;
+$body-color: $text-primary;
