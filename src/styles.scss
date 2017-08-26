@@ -9,6 +9,13 @@ $fa-font-path: "../node_modules/font-awesome/fonts";
 html, body {
     height: 100%;
 }
+a {
+    color: $text-disabled;
+}
+a:hover, a:focus {
+    color: $text-primary;
+    text-decoration: none;
+}
 /*** bootstrap end ***/
 
 /*** fonts start ***/
