@@ -16,6 +16,9 @@ a:hover, a:focus {
     color: $text-primary;
     text-decoration: none;
 }
+hr {
+    border-top: 1px solid #fff;
+  }
 /*** bootstrap end ***/
 
 /*** fonts start ***/
@@ -32,7 +35,7 @@ a:hover, a:focus {
     font-style: normal;
 }
 body {
-  font-family: 'walkway', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: $font-stack;
   font-weight: 600;
   letter-spacing: .1rem;
 }

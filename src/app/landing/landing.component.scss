@@ -1,7 +1,16 @@
 @import '../../variables';
 
+.container-fluid {
+  height: 100%;
+  display: flex;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .title-div {
-  padding-bottom: 20rem;
+  padding-top: 33%;
 }
 h1 {
   font-size: 4rem;
@@ -9,9 +18,14 @@ h1 {
 h5 {
   color: $text-secondary;
 }
-i {
-  font-size: 5rem;
-}
-hr {
-  border-top: 1px solid #fff;
+#cta-row {
+  margin-top: auto;
+  i {
+    font-size: 4rem;
+    color: $text-secondary;
+    padding-bottom: 2rem;
+  }
+  i:hover {
+    color: $text-primary;
+  }
 }

@@ -8,7 +8,7 @@ h2 {
 }
 .left-div {
   border-right: 1px solid #fff;
-}
-.left-div > ul {
-  direction: rtl;
+  ul {
+    direction: rtl;
+  }
 }
