@@ -24,6 +24,7 @@ h5 {
     font-size: 4rem;
     color: $text-secondary;
     padding-bottom: 2rem;
+    transition: color .3s linear;
   }
   i:hover {
     color: $text-primary;
