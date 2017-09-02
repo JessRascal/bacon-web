@@ -30,3 +30,13 @@ h5 {
     color: $text-primary;
   }
 }
+/*** CTA Animation Start ***/
+i:not(:hover).flash {
+  animation: flash 5s infinite ease-in-out;
+}
+@keyframes flash {
+  0%, 50% { color: $text-secondary; }
+  70% { color: $text-primary; }
+  100% { color: $text-secondary; }
+}
+/*** CTA Animation End ***/
