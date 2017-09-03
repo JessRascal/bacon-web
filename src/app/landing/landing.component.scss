@@ -20,14 +20,20 @@ h5 {
 }
 #cta-row {
   margin-top: auto;
+  a.disabled {
+    pointer-events: none;
+  }
   i {
     font-size: 4rem;
     color: $text-secondary;
     padding-bottom: 2rem;
-    transition: color .3s linear;
+    transition: color .3s linear, opacity .3s ease-in-out;
   }
   i:hover {
     color: $text-primary;
+  }
+  i.hidden {
+    opacity: 0;
   }
 }
 /*** CTA Animation Start ***/

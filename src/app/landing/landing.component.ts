@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-landing',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
+  private hideArrow = false;
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    if (window.pageYOffset > 50) {
+      this.hideArrow = true;
+    } else {
+      this.hideArrow = false;
+    }
   }
 
 }

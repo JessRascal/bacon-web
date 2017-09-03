@@ -10,7 +10,7 @@
     </div>
     <div class="row" id="cta-row">
       <div class="col-12">
-        <a pageScroll [pageScrollDuration]="800" href="#about-section"><i class="fa fa-angle-down flash" aria-hidden="true"></i></a>
+        <a pageScroll [pageScrollDuration]="800" href="#about-section" [class.disabled]="hideArrow"><i class="fa fa-angle-down flash" [class.hidden]="hideArrow" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
