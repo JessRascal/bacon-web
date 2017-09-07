@@ -1,10 +1,32 @@
 @import '../../variables';
 
 .container-fluid {
-  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 5rem;
   color: $text-secondary;
   background-color: rgba(1,48,76,.4);
 }
 p {
   margin-bottom: 0;
+}
+// Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-down(xs) {
+  p {
+    font-size: 0.9rem;
+  }
+  .not-sm-down {
+    display: none;
+  }
+}
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+  .container-fluid {
+    flex-direction: row;
+    align-items: center;
+  }
+  #resource-div {
+    text-align: right;
+  }
 }

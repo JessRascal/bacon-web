@@ -7,14 +7,12 @@
 h2 {
   color: $text-secondary;
 }
-// Small devices (landscape phones, 576px and down)
+// Small devices (landscape phones, less than 768px)
 @include media-breakpoint-down(sm) {
   #second-div {
     padding-top: 5rem;
   }
 }
-// Medium devices (tablets, 767px and up)
-@include media-breakpoint-up(md) { }
 // Medium devices (tablets only, 768px to 991px)
 @include media-breakpoint-only(md) { }
 // Medium devices (tablets, 768px and up)
