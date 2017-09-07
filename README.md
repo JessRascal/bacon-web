@@ -26,3 +26,9 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Notes
+`ssh dev@jessrascal.com`
+`ng build -prod`
+`rsync -azvP dist/** dev@jessrascal.com:/var/www/jessrascal.com`
+`ssh dev@46.101.42.232 "pm2 restart bacon-web"` <!-- Not needed yet -->

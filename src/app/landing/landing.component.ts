@@ -7,7 +7,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  private hideArrow = false;
+  public hideArrow = false;
 
   constructor() { }
 
