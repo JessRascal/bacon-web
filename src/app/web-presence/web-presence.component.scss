@@ -1,11 +1,38 @@
 @import '../../variables';
 
+.container {
+  text-align: center;
+}
 i {
   margin: 3rem 5rem;
   color: $text-primary;
-  font-size: 5rem;
+  font-size: 7rem;
 }
 i:hover {
   color: $text-secondary;
   cursor: pointer;
+}
+// Small devices (landscape phones only, 576px)
+@include media-breakpoint-down(sm) {
+  #icon-div {
+    padding-bottom: 3rem;
+  }
+}
+// Small devices (landscape phones only, 576px to 767px)
+@include media-breakpoint-only(sm) {
+  i {
+    margin: 3rem 2rem;
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+  i {
+    font-size: 5rem;
+  }
+}
+// Medium devices (tablets only, 768px to 991px)
+@include media-breakpoint-only(md) {
+  i {
+    margin: 3rem 4rem;
+  }
 }

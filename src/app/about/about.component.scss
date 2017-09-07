@@ -2,7 +2,7 @@
 
 #skill-details {
   flex-direction: column;
-  padding: 5rem 0 5rem 0;
+  padding: 5rem 0 3rem 0;
 }
 h2 {
   color: $text-secondary;
@@ -10,17 +10,24 @@ h2 {
 // Small devices (landscape phones, 576px and down)
 @include media-breakpoint-down(sm) {
   #second-div {
-    padding-top: 5rem;
+    padding-top: 6rem;
   }
 }
 // Medium devices (tablets, 767px and down)
 @include media-breakpoint-down(md) {
-
+  #skill-details {
+    padding: 10rem 0 5rem 0;
+  }
+}
+// Medium devices (tablets only, 768px to 991px)
+@include media-breakpoint-only(md) {
+  i {
+    margin: 3rem 4rem;
+  }
 }
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
   #skill-details {
-    padding: 10rem 0 10rem 0;
     flex-direction: row;
   }
   #first-div {
@@ -33,7 +40,9 @@ h2 {
 }
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
-
+  #skill-details {
+    padding: 10rem 0 10rem 0;
+  }
 }
 // Extra large devices (large desktops, 1200px and up)
 @include media-breakpoint-up(xl) {
