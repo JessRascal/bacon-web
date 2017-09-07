@@ -1,14 +1,41 @@
 @import '../../variables';
 
 #skill-details {
-  padding: 10rem 0 10rem 0;
+  flex-direction: column;
+  padding: 5rem 0 5rem 0;
 }
 h2 {
   color: $text-secondary;
 }
-.left-div {
-  border-right: 1px solid #fff;
-  ul {
-    direction: rtl;
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+
+}
+// Medium devices (tablets, 768px and down)
+@include media-breakpoint-down(md) {
+  #second-div {
+    padding-top: 5rem;
   }
+}
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  #skill-details {
+    padding: 10rem 0 10rem 0;
+    flex-direction: row;
+  }
+  #first-div {
+    border-right: 1px solid #fff;
+    text-align: right;
+    ul {
+      direction: rtl;
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+
+}
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+
 }

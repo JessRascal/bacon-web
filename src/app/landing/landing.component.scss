@@ -43,3 +43,9 @@ i:not(:hover).flash {
   100% { color: $text-secondary; }
 }
 /*** CTA Animation End ***/
+// Medium devices (tablets, 768px and down)
+@include media-breakpoint-down(md) {
+  #cta-row {
+    display: none;
+  }
+}
