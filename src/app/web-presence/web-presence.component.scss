@@ -2,9 +2,15 @@
 
 .container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#icon-div {
+  padding-bottom: 5rem;
 }
 i {
-  margin: 3rem 5rem;
+  margin: 2rem;
   color: $text-primary;
   font-size: 7rem;
 }
@@ -12,27 +18,32 @@ i:hover {
   color: $text-secondary;
   cursor: pointer;
 }
-// Small devices (landscape phones only, 576px)
-@include media-breakpoint-down(sm) {
-  #icon-div {
-    padding-bottom: 3rem;
-  }
-}
+// Small devices (landscape phones, 576px and down)
+@include media-breakpoint-down(sm) { }
 // Small devices (landscape phones only, 576px to 767px)
-@include media-breakpoint-only(sm) {
-  i {
-    margin: 3rem 2rem;
-  }
-}
+@include media-breakpoint-only(sm) { }
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) {
+  .container {
+    flex-direction: row;
+  }
   i {
+    margin: 0 2rem;
     font-size: 5rem;
   }
 }
 // Medium devices (tablets only, 768px to 991px)
 @include media-breakpoint-only(md) {
   i {
-    margin: 3rem 4rem;
+    margin: 0 4rem;
+  }
+}
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+  #icon-div {
+    padding-bottom: 10rem;
+  }
+  i {
+    margin: 0 7rem;
   }
 }
