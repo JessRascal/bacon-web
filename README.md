@@ -31,5 +31,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 `ssh dev@jessrascal.com`
 `npm run build-prod`
-`rsync -azvP dist/** dev@jessrascal.com:/var/www/jessrascal.com`
+`npm run deploy`
 `ssh dev@jessrascal.com "pm2 restart bacon-web"` <!-- Not needed yet -->
