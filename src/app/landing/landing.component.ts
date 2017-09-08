@@ -13,7 +13,7 @@ export class LandingComponent implements OnInit {
 
   ngOnInit() { }
 
-  @HostListener("window:scroll", [])
+  @HostListener('window:scroll', [])
   onWindowScroll() {
     if (window.pageYOffset > 50) {
       this.hideArrow = true;
