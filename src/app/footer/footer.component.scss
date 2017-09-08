@@ -11,6 +11,9 @@
 p {
   margin-bottom: 0;
 }
+#copy-div, #resource-div {
+  flex: 0 0 auto;
+}
 // Extra small devices (portrait phones, less than 576px)
 @include media-breakpoint-down(xs) {
   p {

@@ -4,6 +4,9 @@
   flex-direction: column;
   padding: 5rem 0;
 }
+#first-div, #second-div {
+  flex: 0 0 auto;
+}
 h2 {
   color: $text-secondary;
 }
